@@ -45,6 +45,13 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 
    Aqui você pode testar todos os endpoints da API de forma interativa.
 
+   7. **Autenticando com o Google Cloud**
+'''sh
+gcloud auth login
+gcloud config set project PROJECT_ID
+gcloud run deploy --port:8000 *defaut*
+'''
+
 ---
 
 ## Estrutura do Projeto
@@ -63,10 +70,5 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 
 ---
 
-7. **Autenticando com o Google Cloud**
-'''sh
-gcloud auth login
-gcloud config set project PROJECT_ID
-gcloud run deploy --port:8000 *defaut*
-'''
+
 
