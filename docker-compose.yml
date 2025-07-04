@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+# Serviço da aplicação FastAPI
+  app:
+    build: . # Constroi a imagem a partir do Dockerfile na raiz do projeto
+    container_name: api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app # Monta o diretório atual dentro do contêiner
